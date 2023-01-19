@@ -218,19 +218,19 @@ def generate_pdf(user, nombre, area_chart, text_deuda, text_ahorro, text_inversi
     pdf = FPDF(orientation='landscape', unit='mm', format = [285.75, 508])
     
     #user fonts
-    pdf.add_font('Quicksand', '', '/home/hugoarellano/Downloads/Quicksand/static/Quicksand-Regular.ttf', 
+    pdf.add_font('Quicksand', '', '/Quicksand/static/Quicksand-Regular.ttf', 
              uni=True)
 
-    pdf.add_font('Quicksand', 'B', '/home/hugoarellano/Downloads/Quicksand/static/Quicksand-Bold.ttf', 
+    pdf.add_font('Quicksand', 'B', '/Quicksand/static/Quicksand-Bold.ttf', 
              uni=True)
 
     #***FIRST_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_brand_1.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_brand_1.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***SECOND_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #Adding font -- Title areas
     pdf.set_font('Quicksand', style='B', size=64)
@@ -257,7 +257,7 @@ def generate_pdf(user, nombre, area_chart, text_deuda, text_ahorro, text_inversi
     
     #line
     pdf.set_xy(163,10)
-    pdf.image('/home/hugoarellano/ft_automated_pdf/line.png', h=185)
+    pdf.image('/ft_automated_pdf/line.png', h=185)
     
     ##Texto ahorro
     pdf.set_xy(184, 195)
@@ -269,7 +269,7 @@ def generate_pdf(user, nombre, area_chart, text_deuda, text_ahorro, text_inversi
     
     #line 2
     pdf.set_xy(327,10)
-    pdf.image('/home/hugoarellano/ft_automated_pdf/line.png', h=185)
+    pdf.image('/ft_automated_pdf/line.png', h=185)
     
     #Texto inversión
     pdf.set_xy(348, 195)
@@ -277,7 +277,7 @@ def generate_pdf(user, nombre, area_chart, text_deuda, text_ahorro, text_inversi
     
     #***THIRD_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
 
     pdf.image(global_chart, x=-130, y=5, w=508, h=285.75, type='', link='')
     
@@ -288,8 +288,8 @@ def generate_pdf(user, nombre, area_chart, text_deuda, text_ahorro, text_inversi
     pdf.set_text_color(245,72,1)
        
     #Blue square
-    pdf.image('/home/hugoarellano/ft_automated_pdf/white_square.png', x=260, y=25, w=230, h=110, type='', link='')
-    pdf.image('/home/hugoarellano/ft_automated_pdf/white_square.png', x=260, y=150, w=230, h=110, type='', link='')
+    pdf.image('/ft_automated_pdf/white_square.png', x=260, y=25, w=230, h=110, type='', link='')
+    pdf.image('/ft_automated_pdf/white_square.png', x=260, y=150, w=230, h=110, type='', link='')
 
     # El veredicto
     pdf.set_xy(263, 40)
@@ -310,19 +310,19 @@ def generate_pdf(user, nombre, area_chart, text_deuda, text_ahorro, text_inversi
 
     #***FOURTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_program_4.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_program_4.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***FIFTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_slogan_5.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_slogan_5.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***SIXTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_coaches_6.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_coaches_6.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***SEVENTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_final_7.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_final_7.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***OUTPUT***
     output = pdf.output(f'fint_test_{str(user)}_{nombre.title()}.pdf')
@@ -337,19 +337,19 @@ def generate_pdf_2(user, nombre, area_chart, text_deuda, text_ahorro, text_inver
     pdf = FPDF(orientation='landscape', unit='mm', format = [285.75, 508])
     
     #user fonts
-    pdf.add_font('Quicksand', '', '/home/hugoarellano/Downloads/Quicksand/static/Quicksand-Regular.ttf', 
+    pdf.add_font('Quicksand', '', '/Quicksand/static/Quicksand-Regular.ttf', 
              uni=True)
 
-    pdf.add_font('Quicksand', 'B', '/home/hugoarellano/Downloads/Quicksand/static/Quicksand-Bold.ttf', 
+    pdf.add_font('Quicksand', 'B', '/Quicksand/static/Quicksand-Bold.ttf', 
              uni=True)
 
     #***FIRST_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_brand_1.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_brand_1.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***SECOND_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #Adding font -- Title areas
     pdf.set_font('Quicksand', style='B', size=64)
@@ -376,7 +376,7 @@ def generate_pdf_2(user, nombre, area_chart, text_deuda, text_ahorro, text_inver
     
     #line
     pdf.set_xy(163,10)
-    pdf.image('/home/hugoarellano/ft_automated_pdf/line.png', h=185)
+    pdf.image('ft_automated_pdf/line.png', h=185)
     
     ##Texto ahorro
     pdf.set_xy(184, 195)
@@ -388,7 +388,7 @@ def generate_pdf_2(user, nombre, area_chart, text_deuda, text_ahorro, text_inver
     
     #line 2
     pdf.set_xy(327,10)
-    pdf.image('/home/hugoarellano/ft_automated_pdf/line.png', h=185)
+    pdf.image('ft_automated_pdf/line.png', h=185)
     
     #Texto inversión
     pdf.set_xy(348, 195)
@@ -396,7 +396,7 @@ def generate_pdf_2(user, nombre, area_chart, text_deuda, text_ahorro, text_inver
     
     #***THIRD_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_blank.png', x=0, y=0, w=508, h=285.75, type='', link='')
 
     pdf.image(global_chart, x=-130, y=5, w=508, h=285.75, type='', link='')
     
@@ -407,8 +407,8 @@ def generate_pdf_2(user, nombre, area_chart, text_deuda, text_ahorro, text_inver
     pdf.set_text_color(245,72,1)
        
     #Blue square
-    pdf.image('/home/hugoarellano/ft_automated_pdf/white_square.png', x=260, y=25, w=230, h=110, type='', link='')
-    pdf.image('/home/hugoarellano/ft_automated_pdf/white_square.png', x=260, y=150, w=230, h=110, type='', link='')
+    pdf.image('/ft_automated_pdf/white_square.png', x=260, y=25, w=230, h=110, type='', link='')
+    pdf.image('/ft_automated_pdf/white_square.png', x=260, y=150, w=230, h=110, type='', link='')
 
     # El veredicto
     pdf.set_xy(263, 40)
@@ -429,19 +429,19 @@ def generate_pdf_2(user, nombre, area_chart, text_deuda, text_ahorro, text_inver
 
     #***FOURTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_program_4.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_program_4.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***FIFTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_slogan_5.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_slogan_5.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***SIXTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_coaches_6.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_coaches_6.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     #***SEVENTH_PAGE***
     pdf.add_page()
-    pdf.image('/home/hugoarellano/ft_automated_pdf/fint_final_7.png', x=0, y=0, w=508, h=285.75, type='', link='')
+    pdf.image('/ft_automated_pdf/fint_final_7.png', x=0, y=0, w=508, h=285.75, type='', link='')
     
     import base64
     st.download_button(
